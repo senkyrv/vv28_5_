@@ -1,0 +1,59 @@
+<!DOCTYPE html>
+<html lang="cs">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Gratulace ke státnicím!</title>
+    <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+    <div class="container">
+        <h1>Gratuluji ke zvládnutým státnicím! 🎓</h1>
+        <p class="subtitle">Vyber si svou odměnu z následujících možností:</p>
+        
+        <div class="rewards-container">
+            <div class="reward-option" id="option1">
+                <div class="image-container">
+                    <img src="img/prada1.jpg" alt="Odměna 1" class="reward-image">
+                </div>
+                <p>Brýle Prada</p>
+            </div>
+            <div class="reward-option" id="option2">
+                <div class="image-container">
+                    <img src="img/kl.png" alt="Odměna 2" class="reward-image">
+                </div>
+                <p>Kabelka Karl Lagerfeld</p>
+            </div>
+            <div class="reward-option" id="option3">
+                <div class="image-container">
+                    <img src="img/prada2.png" alt="Odměna 3" class="reward-image">
+                </div>
+                <p>Brýle Prada v2</p>
+            </div>
+        </div>
+
+        <div class="wheel-section">
+            <p>Nejsi rozhodnutá? Roztoč kolo, které vybere za tebe!</p>
+            <div class="wheel-container">
+                <canvas id="wheel" width="400" height="400"></canvas>
+                <button id="spin-button">Roztočit kolo</button>
+            </div>
+        </div>
+    </div>
+
+    <!-- Popup -->
+    <div class="popup-overlay" id="popupOverlay">
+        <div class="popup">
+            <h2>🎉 Gratuluji! 🎉</h2>
+            <p id="random-message">Ty budeš ale kočka!</p>
+            <div class="popup-image-container">
+                <img id="winner-image" class="popup-image" src="" alt="Vybraná odměna">
+            </div>
+            <p id="winner-text" style="font-weight: bold; font-size: 1.5em; color: #3498db;"></p>
+            <button class="popup-close" onclick="closePopup()">Super!</button>
+        </div>
+    </div>
+
+    <script src="script.js"></script>
+</body>
+</html> 
