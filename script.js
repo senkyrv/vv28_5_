@@ -8,7 +8,7 @@ document.addEventListener('DOMContentLoaded', function() {
     const winnerImage = document.getElementById('winner-image');
     
     const rewards = [
-        { name: 'Brýle Prada', image: 'img/prada1.jpg', color: '#FF69B4' },
+        { name: 'Brýle Prada', image: 'img/prada1.png', color: '#FF69B4' },
         { name: 'Kabelka Karl Lagerfeld', image: 'img/kl.png', color: '#FF1493' },
         { name: 'Brýle Prada v2', image: 'img/prada2.png', color: '#DC143C' }
     ];
@@ -247,7 +247,7 @@ document.addEventListener('DOMContentLoaded', function() {
                 let pointerAngle = (3 * Math.PI / 2 - finalRotation + 2 * Math.PI) % (2 * Math.PI);
                 let winningIndex = Math.floor(pointerAngle / sectorAngle) % spicyRewards.length;
                 const spicyWinner = spicyRewards[winningIndex];
-                document.getElementById('spicy-winner-text').textContent = `Vyhrála jsi: ${spicyWinner.name}`;
+                document.getElementById('spicy-winner-text').textContent = `Vyhrála jsi: ${spicyWinner.name} ❤️`;
                 spicyWheelSection.style.display = 'none';
                 spicyPopupOverlay.style.display = 'flex';
             }
