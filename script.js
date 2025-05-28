@@ -170,7 +170,7 @@ document.addEventListener('DOMContentLoaded', function() {
         return array;
     }
     const spicyRewards = shuffle([
-        ...Array(9).fill({ name: 'Anál', color: '#ff69b4' }),
+        ...Array(9).fill({ name: 'SEX', color: '#ff69b4' }),
         { name: 'Dovolená', color: '#dc143c' }
     ]);
     let spicyCurrentRotation = 0;
