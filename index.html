@@ -8,7 +8,7 @@
 </head>
 <body>
     <div class="container">
-        <h1>Gratuluji ke zvládnutým státnicím! 🎓</h1>
+        <h1>Gratuluji ke zvládnutým státnicím, paní Inženýrko Dlouhá! 🎓</h1>
         <p class="subtitle">Vyber si svou odměnu z následujících možností:</p>
         
         <div class="rewards-container">
@@ -41,7 +41,6 @@
         </div>
     </div>
 
-    <!-- Popup -->
     <div class="popup-overlay" id="popupOverlay">
         <div class="popup">
             <h2>🎉 Gratuluji! 🎉</h2>
@@ -50,7 +49,25 @@
                 <img id="winner-image" class="popup-image" src="" alt="Vybraná odměna">
             </div>
             <p id="winner-text" style="font-weight: bold; font-size: 1.5em; color: #3498db;"></p>
+            <div id="spicy-section" style="margin-top: 1em; display: none;">
+                <p>Nestačí ti to, tak roztoč Spicy Kolo Odměn!</p>
+                <button id="spicy-button">Spicy Kolo</button>
+            </div>
             <button class="popup-close" onclick="closePopup()">Super!</button>
+        </div>
+    </div>
+
+    <div class="popup-overlay" id="spicyPopupOverlay" style="display: none;">
+        <div class="popup">
+            <h2>Gratulace ke grandiozní výhře!</h2>
+            <p id="spicy-winner-text" style="font-weight: bold; font-size: 1.5em; color: #f06595;"></p>
+            <button class="popup-close" onclick="closeSpicyPopup()">Super!</button>
+        </div>
+    </div>
+    <div class="spicy-wheel-section" id="spicyWheelSection" style="display: none;">
+        <div class="wheel-container">
+            <canvas id="spicyWheel" width="400" height="400"></canvas>
+            <button id="spicySpinButton">Roztočit Spicy Kolo</button>
         </div>
     </div>
 

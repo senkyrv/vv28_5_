@@ -221,4 +221,74 @@ h1 {
         width: 300px;
         height: 300px;
     }
+}
+
+#spicy-section {
+    text-align: center;
+    margin-top: 1.5em;
+    margin-bottom: 1em;
+}
+#spicy-section p {
+    color: #d6336c;
+    font-size: 1.1em;
+    font-weight: bold;
+    margin-bottom: 0.7em;
+}
+#spicy-button {
+    background: #f06595;
+    color: white;
+    border: none;
+    padding: 0.8rem 2rem;
+    border-radius: 25px;
+    cursor: pointer;
+    font-size: 1rem;
+    transition: background-color 0.3s ease;
+    margin-bottom: 0.5em;
+}
+#spicy-button:hover {
+    background: #d6336c;
+}
+
+.spicy-wheel-section {
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100vw;
+    height: 100vh;
+    background: rgba(214, 51, 108, 0.5);
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    z-index: 2000;
+}
+.spicy-wheel-section .wheel-container {
+    background: white;
+    padding: 2rem 2rem 2.5rem 2rem;
+    border-radius: 15px;
+    box-shadow: 0 10px 25px rgba(214, 51, 108, 0.2);
+    text-align: center;
+    max-width: 90vw;
+    width: 420px;
+    position: relative;
+    animation: popupIn 0.3s ease-out;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+}
+#spicySpinButton {
+    margin-top: 1.5rem;
+    padding: 1rem 2rem;
+    font-size: clamp(1rem, 3vw, 1.1rem);
+    background-color: #f06595;
+    color: white;
+    border: none;
+    border-radius: 25px;
+    cursor: pointer;
+    transition: background-color 0.3s ease;
+    font-weight: bold;
+    box-shadow: 0 2px 8px rgba(214, 51, 108, 0.08);
+}
+#spicySpinButton:hover {
+    background-color: #d6336c;
 } 
